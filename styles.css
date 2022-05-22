@@ -1,125 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
 *{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+    margin: 0%;
+    padding: 0%;
 }
 
-.hero{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: #eff4fd;
-    position: relative;
-}
-
-nav{
+.container{
     display: flex;
-    width: 84%;
-    margin: auto;
-    padding: 20px 0;
-    align-items: center;
-    justify-content: space-between;
 }
 
-.logo{
-    width: 100px;
+.sidepanel{
+    background-color: rgb(0, 10, 20);
+    width: 18vw;
+    height: 100vh;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    transition: transform 0.3s ease-in;
+}
+
+.sidepanel nav {
+    padding: 20px;
+}
+
+.sidepanel nav li{
+    list-style: none;
+    font-size: 20px;
+    color: white;
+    padding: 15px 0px 15px 0px;
+}
+
+.sidepanel nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.main{
+    background-color: white;
+    width: 82vw;
+}
+
+.infoContainer{
+    background-color: white;
+    height: 70vh;
+    width: 75vw;
+    margin: 80px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.myphoto{
+    display: flex;
+    flex-shrink: initial;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.myphoto img{
+    max-height: 60vh;
+}
+
+.myinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello{
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+.name{
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: chocolate;
+}
+
+.about{
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 1em;
+}
+
+.buttons button{
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    color: white;
+    background-color: chocolate;
+    margin: 0 1em;
+    margin-bottom: 1em;
     cursor: pointer;
 }
 
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
+.buttons button:hover{
+    color: chocolate;
+    background-color: white;
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-}
-
-nav ul li a:hover{
-    color: red;
-}
-
-.detel{
-    margin-left: 8%;
-    margin-top: 15%;
-}
-
-.detel h1{
-    font-size: 50px;
-    color: #212121;
-    margin-bottom: 20px;
-}
-
-span{
-    color: orange;
-    
-}
-
-.detel p{
-    color: #555;
-    line-height: 22px;
-}
-
-.detel a{
-    background: #212121;
-    padding: 10px 18px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #fff;
-    display: inline-block;
-    margin: 30px 0;
-    border-radius: 5px;
-}
-
-.images{
-    width: 45%;
-    height: 80%;
+.responsiveSidepanel{
     position: absolute;
-    bottom: 0;
-    right: 100px;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
 }
 
-.images img{
-    height: 100%;
+.sidepanelGo{
+    transform: translate(-440px, 0px);
     position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    transition: bottom 1s, left 1s;
 }
 
-.images:hover .shape{
-    bottom: 25px;
+.cross{
+    margin-left: 144px;
 }
 
-.images:hover .self{
-    transform: scale(1.5);
-    left: 45%;
-    max-width: 30%;
-    max-height: 30%;
-    transform: scale(1.5);
-}
+@media (max-width: 1035px) {
+   /* .sidepanel{
+        transform: translate(-440px, 0px);
+        position: absolute;
+    }*/
 
-.images .self{
-    transition: 0.5s all ease-in-out;
-    max-width: 60%;
-    max-height: 60%;
-}
+    .myphoto img{
+        max-height: 25vh;
+    }
 
-.social{
-    margin-left: 8%;
-    margin-top: 100px;
-}
-
-.social a{
-    font-size: 30px;
-    color: #212121;
-    margin-right: 20px;
-}
-
-.social a:hover{
-    color: orange;
+    .name{
+        font-size: 1.8rem;
+    }
 }
