@@ -117,16 +117,42 @@
 }
 
 @media (max-width: 1035px) {
-   /* .sidepanel{
-        transform: translate(-440px, 0px);
-        position: absolute;
-    }*/
 
     .myphoto img{
         max-height: 25vh;
+        flex-direction: row;
+        align-items: baseline;
     }
 
     .name{
         font-size: 1.8rem;
+    }
+
+    .sidepanel{
+        background-color: rgb(20, 25, 30);
+        width: 25vw;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .cross{
+        margin-left: 100px;
+    }
+
+    .about{
+        font-size: 1.6rem;
+    }
+    .hello{
+        margin-bottom: 20px;
+    }
+
+    .sidepanel{
+        background-color: rgb(166, 166, 166);
+    }
+    .sidepanel nav li a{
+        color: black;
+    }
+
+    .infoContainer{
+        margin: 100px 25px;
     }
 }
