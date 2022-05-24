@@ -15,6 +15,7 @@
     height: 100vh;
     font-family: 'Fira Sans', sans-serif;
     font-weight: bold;
+    z-index: 10;
     transition: transform 0.3s ease-in;
 }
 
@@ -113,7 +114,7 @@
 }
 
 .cross{
-    margin-left: 144px;
+    margin-left: 18vw;
 }
 
 @media (max-width: 1035px) {
@@ -129,13 +130,13 @@
     }
 
     .sidepanel{
-        background-color: rgb(20, 25, 30);
-        width: 25vw;
+        background-color: rgb(166, 166, 166);
+        width: 35vw;
         transition: transform 0.4s ease-in-out;
     }
 
     .cross{
-        margin-left: 100px;
+        margin-left: 32vw;
     }
 
     .about{
@@ -145,9 +146,6 @@
         margin-bottom: 20px;
     }
 
-    .sidepanel{
-        background-color: rgb(166, 166, 166);
-    }
     .sidepanel nav li a{
         color: black;
     }
